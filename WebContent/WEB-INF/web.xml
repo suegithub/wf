@@ -8,7 +8,10 @@
   <context-param>
   	<!-- 容器配置文件 -->
   	<param-name>contextConfigLocation</param-name>
-  	<param-value>/WEB-INF/config/applicationContext.xml</param-value>
+  	<param-value>
+  		/WEB-INF/config/applicationContext.xml;
+  		/WEB-INF/config/spring-mybatis.xml	
+  	</param-value>
   </context-param>
   
   <!-- 字符过滤 filter-mapping需要放在最前 -->
@@ -31,6 +34,23 @@
     <description>spring监听器</description>
     <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
   </listener>
+  
+  <!-- DispatcherServlet 配置  -->
+   <servlet>
+    <description>spring mvc servlet</description>
+    <servlet-name>springMVC</servlet-name>
+    <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+    <init-param>
+      <description>spring mvc 配置文件</description>
+      <param-name>contextConfigLocation</param-name>
+      <param-value>/WEB-INF/config/spring-mvc.xml</param-value>
+    </init-param>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>springMVC</servlet-name>
+    <url-pattern>*.do</url-pattern>
+  </servlet-mapping>
   
   <session-config>
     <session-timeout>15</session-timeout>
