@@ -6,10 +6,12 @@
 	http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
   <display-name></display-name>
   <context-param>
+  	<!-- 容器配置文件 -->
   	<param-name>contextConfigLocation</param-name>
-  	<param-value>classpath:spring.xml;classpath:spring-mybatis.xml</param-value>
+  	<param-value>/WEB-INF/config/applicationContext.xml</param-value>
   </context-param>
   
+  <!-- 字符过滤 filter-mapping需要放在最前 -->
   <filter>
     <description>字符集过滤器</description>
     <filter-name>encodingFilter</filter-name>
@@ -28,9 +30,6 @@
   <listener>
     <description>spring监听器</description>
     <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
-  </listener>
-  <listener>
-    <listener-class>org.springframework.web.util.IntrospectorCleanupListener</listener-class>
   </listener>
   
   <session-config>
