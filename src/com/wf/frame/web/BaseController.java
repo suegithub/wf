@@ -10,7 +10,7 @@ public class BaseController {
 	protected static final String ERROR_MSG_KEY = "errorMsg";
 	
 	public BaseController(){
-		System.out.println("BaseController Init");
+		
 	}
 	
 	
