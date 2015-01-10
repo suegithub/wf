@@ -27,7 +27,7 @@ public class MainController extends BaseController {
 		
 			List<User> users = mainService.getUserList();
 			for(User u : users){
-				System.out.println(u.getUserName());
+
 			}
 			
 			return "main/main";
