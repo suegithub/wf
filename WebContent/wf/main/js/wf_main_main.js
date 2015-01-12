@@ -31,8 +31,8 @@ function initzTree(){
 	                	 	{"id":"21","pId":"2","mName":"练习" }
 	                 ];
 	
-    console.info("开始初始化zTree...");
-    $.fn.zTree.init($("#zTree"), setting, treeNodes);
+ console.info("开始初始化zTree...");
+ $.fn.zTree.init($("#zTree"), setting, treeNodes);
 	console.info("zTree初始化完成.");
     
 }
