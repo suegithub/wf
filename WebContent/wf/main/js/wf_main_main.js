@@ -25,14 +25,14 @@ function initzTree(){
 		};
 
 	 var treeNodes =	[
-	                	 	{"id":"1","pId":"0","mName":"å¼?å­????"},
-	                	 	{"id":"11","pId":"1","mName":"??»å??"},
-	                	 	{"id":"2","pId":"0","mName":"???å¾·å??"},
-	                	 	{"id":"21","pId":"2","mName":"ç»?ä¹?" }
+	                	 	{"id":"1","pId":"0","mName":"å¼ å­¦å‹"},
+	                	 	{"id":"11","pId":"1","mName":"å»åˆ«"},
+	                	 	{"id":"2","pId":"0","mName":"åˆ˜å¾·å"},
+	                	 	{"id":"21","pId":"2","mName":"ç»ƒä¹ " }
 	                 ];
 	
-    console.info("å¼?å§????å§????zTree...");
+    console.info("å¼€å§‹åˆå§‹åŒ–zTree...");
     $.fn.zTree.init($("#zTree"), setting, treeNodes);
-	console.info("zTree???å§????å®????.");
+	console.info("zTreeåˆå§‹åŒ–å®Œæˆ.");
     
 }
