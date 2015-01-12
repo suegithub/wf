@@ -33,6 +33,7 @@ function initzTree(){
 	
  console.info("开始初始化zTree...");
  $.fn.zTree.init($("#zTree"), setting, treeNodes);
-	console.info("zTree初始化完成.");
+ console.info("zTree初始化完成.");
+ console.info("测试...");
     
 }
