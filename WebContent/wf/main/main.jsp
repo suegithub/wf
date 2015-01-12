@@ -37,8 +37,24 @@
 		</div>
 		<!-- menu end -->
 		<!-- main page container  -->
-		<div id="pageContainer">
-		
+		<div id="pageContainer" class="container">
+			<ul>
+				<li><a href="#">菜单选项1</a>
+					<ul>
+						<li><a href="#">菜单选项1-1</a></li>
+						<li><a href="#">菜单选项1-2</a></li>
+						<li><a href="#">菜单选项1-3</a></li>
+					</ul>
+				</li>
+				<li><a href="#">菜单选项2</a>
+					<ul>
+						<li><a href="#">菜单选项2-1</a></li>
+						<li><a href="#">菜单选项2-2</a></li>
+					</ul>
+				</li>
+				<li><a href="#">菜单选项3</a></li>
+				<li><a href="#">菜单选项4</a></li>
+			</ul>
 		</div>
 		<!-- main page container end-->
 	</div>
