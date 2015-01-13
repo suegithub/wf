@@ -55,7 +55,7 @@
 			{ id:33, pId:3, name:"叶子节点 3-3"}
 		];
 		var log, className = "dark";
-		function(treeId, treeNodes) {
+		function beforeDrag(treeId, treeNodes) {
 			return false;
 		}
 		function beforeEditName(treeId, treeNode) {
