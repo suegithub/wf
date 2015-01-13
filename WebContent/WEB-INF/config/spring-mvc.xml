@@ -4,8 +4,11 @@
 			  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
 			  xmlns:p="http://www.springframework.org/schema/p" 
 			  xmlns:context="http://www.springframework.org/schema/context" 
+			  xmlns:util="http://www.springframework.org/schema/util"
 			  xsi:schemaLocation="http://www.springframework.org/schema/beans 
-			http://www.springframework.org/schema/beans/spring-beans-3.0.xsd 
+			http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+			http://www.springframework.org/schema/util
+			http://www.springframework.org/schema/util/spring-util-3.0.xsd 
 			http://www.springframework.org/schema/context 
 			http://www.springframework.org/schema/context/spring-context-3.0.xsd 
 			http://www.springframework.org/schema/mvc 
@@ -18,11 +21,11 @@
 	<!-- p:prefix 添加 / 表示由 WebRoot 为上下文否则为相对路径-->
 	<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver" p:prefix="/wf/" p:suffix=".jsp" />
 
-
+	<!-- 
 	<bean class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter"
 		p:messageConverters-ref="messageConverters"/>
 	<util:list id="messageConverters">
-		<bean class="org.springframework.http.converter.MappingJacksonHttpMessageConverter"/>
+		<bean class="org.springframework.http.converter.json.MappingJacksonHttpMessageConverter"/>
 	</util:list>
-
+	 -->
 </beans>

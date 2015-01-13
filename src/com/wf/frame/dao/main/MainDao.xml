@@ -9,9 +9,6 @@
   	SELECT * FROM wf_user
   </select>
   
-  <insert id="insertMenu" parameterType="com.mybatis.config.User">
-        insert into wf_menu(menu_id,menu_label,menu_url,menu_pid)
-			values('10000003', '菜单3','http://www.google.com','0');
-    </insert>
+
     
 </mapper>

@@ -4,6 +4,11 @@ import com.wf.frame.web.BaseDomain;
 
 public class Menu extends BaseDomain {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 6897196532717282215L;
+	
 	private String menuId;
 	private String menuLabel;
 	private String menuUrl;
