@@ -1,2 +1,7 @@
 /build/
+<<<<<<< HEAD
+/.classpath
+/.gitignore
+=======
 /.settings/
+>>>>>>> branch 'master' of https://github.com/suegithub/wf.git

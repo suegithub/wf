@@ -6,8 +6,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.wf.frame.dao.main.MainDao;
-import com.wf.frame.dao.main.User;
 import com.wf.frame.service.BaseService;
+import com.wf.frame.web.main.model.User;
 
 @Service
 public class MainService extends BaseService {

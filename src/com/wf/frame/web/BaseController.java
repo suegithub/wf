@@ -2,7 +2,7 @@ package com.wf.frame.web;
 
 import javax.servlet.http.HttpServletRequest;
 
-import com.wf.frame.dao.main.User;
+import com.wf.frame.web.main.model.User;
 
 
 public class BaseController {
