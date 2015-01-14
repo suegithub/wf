@@ -1,8 +1,11 @@
 package com.wf.frame.dao.main;
 
-import com.wf.frame.dao.BaseDao;
+import java.util.List;
+
 import com.wf.frame.web.main.model.Menu;
 
-public class MenuDao extends BaseDao<Menu> {
+public interface MenuDao {
 
+	public List<Menu>  loadMenuList();
+	
 }

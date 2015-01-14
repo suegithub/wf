@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="com.wf.frame.dao.main.MenuDao" >
-
+	<resultMap id="menu_map" type="com.wf.frame.web.main.model.Menu">
+		<result property="menuId" column="menu_id"  />
+		<result property="menuLabel" column="menu_label"  />
+		<result property="menuUrl" column="menu_url"  />
+		<result property="menuPid" column="menu_pid"  />
+		<result property="icon" column="icon"  />
+		<result property="menuLevel" column="menu_level"  />
+	</resultMap>
+  <select id="loadMenuList"  resultMap="menu_map">
+  		SELECT * FROM wf_menu
+  </select>
   
-    
 </mapper>

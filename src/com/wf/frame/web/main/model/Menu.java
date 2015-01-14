@@ -1,5 +1,8 @@
 package com.wf.frame.web.main.model;
 
+import java.util.List;
+
+import com.mysql.jdbc.Blob;
 import com.wf.frame.web.BaseDomain;
 
 public class Menu extends BaseDomain {
@@ -13,7 +16,22 @@ public class Menu extends BaseDomain {
 	private String menuLabel;
 	private String menuUrl;
 	private String menuPid;
+	private String menuLevel;
+	private Blob icon;
 	
+	
+	public Blob getIcon() {
+		return icon;
+	}
+	public void setIcon(Blob icon) {
+		this.icon = icon;
+	}
+	public String getMenuLevel() {
+		return menuLevel;
+	}
+	public void setMenuLevel(String menuLevel) {
+		this.menuLevel = menuLevel;
+	}
 	public String getMenuId() {
 		return menuId;
 	}

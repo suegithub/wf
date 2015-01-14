@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import com.wf.frame.service.main.MenuService;
 import com.wf.frame.web.BaseController;
 import com.wf.frame.web.main.model.Menu;
+import com.wf.frame.web.main.model.User;
 
 @Controller
 @RequestMapping("/frame/menu")
@@ -24,6 +25,13 @@ public class MenuController extends BaseController {
 		
 			
 			return "main/menu_edit";
+	}
+	
+	@RequestMapping("/loadmenu")
+	public String loadMenu(User user){
+		
+		menuService.loadMenuList();
+		return "main/menu_list";
 	}
 	
 }
