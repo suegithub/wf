@@ -1,6 +1,8 @@
 package com.wf.frame.web.main.controller;
 
 
+import java.util.List;
+
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -30,7 +32,8 @@ public class MenuController extends BaseController {
 	@RequestMapping("/loadmenu")
 	public String loadMenu(User user){
 		
-		menuService.loadMenuList();
+		List<Menu> menus =  menuService.loadMenuList();
+		
 		return "main/menu_list";
 	}
 	
